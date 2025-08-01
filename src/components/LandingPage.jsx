@@ -113,10 +113,19 @@ const LandingPage = () => {
     console.log('Login data:', loginData);
     console.log('Selected role:', selectedRole);
     
-    // For demo purposes, redirect to dashboard
+    // For demo purposes, redirect to appropriate dashboard
     if (selectedRole === 'citizen') {
       console.log('Navigating to citizen dashboard...');
       navigate('/citizen-dashboard');
+    } else if (selectedRole === 'msme') {
+      console.log('Navigating to MSME dashboard...');
+      navigate('/msme-dashboard');
+    } else if (selectedRole === 'transport') {
+      console.log('Navigating to transport dashboard...');
+      navigate('/transport-dashboard');
+    } else if (selectedRole === 'shop') {
+      console.log('Navigating to shop dashboard...');
+      navigate('/shop-dashboard');
     } else {
       alert('Login successful! Dashboard coming soon.');
     }

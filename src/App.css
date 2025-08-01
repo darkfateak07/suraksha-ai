@@ -104,3 +104,27 @@ body {
     display: none !important;
   }
 }
+
+/* Dashboard Placeholder Styles */
+.dashboard-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}
+
+.dashboard-placeholder h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.dashboard-placeholder p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+}

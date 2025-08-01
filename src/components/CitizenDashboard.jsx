@@ -167,57 +167,68 @@ const CitizenDashboard = () => {
       <div className="main-content">
         {/* Top Navbar */}
         <header className="top-navbar">
-          <div className="navbar-content">
+          <div className="navbar-left">
             <button
               onClick={() => setSidebarOpen(true)}
               className="sidebar-toggle"
             >
               <FaBars />
             </button>
+            <div className="search-bar">
+              <FaSearch className="search-icon" />
+              <input
+                type="text"
+                placeholder="Search routes, alerts, MSMEs..."
+                className="search-input"
+              />
+            </div>
+          </div>
 
-            <div className="navbar-right">
-              <div className="notification-section">
-                <button 
-                  className="notification-btn"
-                  onClick={() => setShowNotifications(!showNotifications)}
-                >
-                  <FaBell />
-                  <span className="notification-badge">3</span>
-                </button>
-                
-                {showNotifications && (
-                  <div className="notification-panel">
-                    <div className="notification-header">
-                      <h5>Notifications</h5>
-                      <button 
-                        className="close-notifications"
-                        onClick={() => setShowNotifications(false)}
-                      >
-                        <FaTimes />
-                      </button>
-                    </div>
-                    <div className="notification-list">
-                      {notifications.map((notification) => (
-                        <div key={notification.id} className={`notification-item ${notification.type}`}>
-                          <div className="notification-icon">
-                            <notification.icon />
-                          </div>
-                          <div className="notification-content">
-                            <p className="notification-message">{notification.message}</p>
-                            <span className="notification-time">{notification.time}</span>
-                          </div>
-                        </div>
-                      ))}
-                    </div>
+          <div className="navbar-right">
+            <div className="notification-section">
+              <button 
+                className="notification-btn"
+                onClick={() => setShowNotifications(!showNotifications)}
+              >
+                <FaBell />
+                <span className="notification-badge">3</span>
+              </button>
+              
+              {showNotifications && (
+                <div className="notification-panel">
+                  <div className="notification-header">
+                    <h5>Notifications</h5>
+                    <button 
+                      className="close-notifications"
+                      onClick={() => setShowNotifications(false)}
+                    >
+                      <FaTimes />
+                    </button>
                   </div>
-                )}
-              </div>
-
-              <div className="user-profile">
-                <div className="user-avatar">
-                  <FaUser />
+                  <div className="notification-list">
+                    {notifications.map((notification) => (
+                      <div key={notification.id} className={`notification-item ${notification.type}`}>
+                        <div className="notification-icon">
+                          <notification.icon />
+                        </div>
+                        <div className="notification-content">
+                          <p className="notification-message">{notification.message}</p>
+                          <span className="notification-time">{notification.time}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
+              )}
+            </div>
+
+            <div className="user-profile">
+              <div className="user-avatar">
+                <FaUser />
+              </div>
+              <div className="user-info">
                 <span className="user-name">John Doe</span>
+                <span className="user-role">Citizen</span>
               </div>
             </div>
           </div>
