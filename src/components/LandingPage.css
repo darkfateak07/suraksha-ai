@@ -348,6 +348,8 @@ body {
 
 /* Section Styles */
 .section-title {
+  display: flex;
+  justify-content: center;
   font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
@@ -357,11 +359,14 @@ body {
 }
 
 .section-subtitle {
+  display: flex;
+  justify-content: center;
   font-size: 1.125rem;
-  color: var(--text-secondary);
+color:red;
+  margin-bottom: 2rem;
+  opacity: 0.8;
+  max-width: 800px;
   text-align: center;
-  max-width: 600px;
-  margin: 0 auto 3rem;
 }
 
 /* Features Section */

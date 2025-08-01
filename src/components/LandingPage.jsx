@@ -307,9 +307,7 @@ const LandingPage = () => {
           <div className="row">
             <div className="col-12 text-center mb-5" data-aos="fade-up">
               <h2 className="section-title">Comprehensive Disaster Management Platform</h2>
-              <p className="section-subtitle">
-                Advanced AI technology protecting communities in coastal and hilly regions
-              </p>
+              
             </div>
           </div>
           
@@ -419,9 +417,7 @@ const LandingPage = () => {
           <div className="row">
             <div className="col-12 text-center mb-5" data-aos="fade-up">
               <h2 className="section-title">Before & After Disaster Management</h2>
-              <p className="section-subtitle">
-                Comprehensive solutions for every phase of disaster management
-              </p>
+             
             </div>
           </div>
           
@@ -473,9 +469,7 @@ const LandingPage = () => {
           <div className="row">
             <div className="col-12 text-center mb-5" data-aos="fade-up">
               <h2 className="section-title">AI-Powered Alert System</h2>
-              <p className="section-subtitle">
-                Intelligent monitoring and instant notifications for maximum safety
-              </p>
+             
             </div>
           </div>
           
@@ -557,9 +551,7 @@ const LandingPage = () => {
           <div className="row">
             <div className="col-12 text-center mb-5" data-aos="fade-up">
               <h2 className="section-title">Advanced Technology Stack</h2>
-              <p className="section-subtitle">
-                Cutting-edge technologies powering our disaster management platform
-              </p>
+            
             </div>
           </div>
           

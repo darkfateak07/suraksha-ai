@@ -927,7 +927,7 @@ body {
 }
 
 .contact-info p {
-  color: var(--text-secondary);
+  color: black;
   font-size: 14px;
   margin: 0;
 }
